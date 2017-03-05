@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.version                 = "0.0.1"
   s.summary                 = "Database Manager for Realm written in Swift"
   s.homepage                = "https://github.com/konDeichmann/RealmManager"
-  s.license                 = 'MIT'
+  s.license                 = { :type => "MIT", :file => "LICENSE" }
   s.author                  = { "kondeichmann" => "k.deichmann@mac.com" }
   s.platform                = :ios
   s.ios.deployment_target   = '9.0'
