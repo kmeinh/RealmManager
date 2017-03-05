@@ -14,9 +14,6 @@
 		3EC0006C1E69F29D00B24F9D /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EC000641E69F29D00B24F9D /* Database.xcdatamodeld */; };
 		3EC0006D1E69F29D00B24F9D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EC000661E69F29D00B24F9D /* Info.plist */; };
 		3EC0006E1E69F29D00B24F9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC000671E69F29D00B24F9D /* ViewController.swift */; };
-		3EC000711E69FAB500B24F9D /* DatabaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC000701E69FAB500B24F9D /* DatabaseWrapper.swift */; };
-		3EC000731E6A0AA600B24F9D /* DatabaseWrapper+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC000721E6A0AA600B24F9D /* DatabaseWrapper+Object.swift */; };
-		3EC000751E6A149C00B24F9D /* DatabaseWrapper+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC000741E6A149C00B24F9D /* DatabaseWrapper+Logging.swift */; };
 		3EEBC4271E69F12D00AEAFA8 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBC4261E69F12D00AEAFA8 /* DatabaseTests.swift */; };
 		5EE5C438615F1420C70089E0 /* Pods_Database_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D2FAF9D9F46013A96C6143 /* Pods_Database_Example.framework */; };
 /* End PBXBuildFile section */
@@ -40,9 +37,6 @@
 		3EC000651E69F29D00B24F9D /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		3EC000661E69F29D00B24F9D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EC000671E69F29D00B24F9D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3EC000701E69FAB500B24F9D /* DatabaseWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseWrapper.swift; sourceTree = "<group>"; };
-		3EC000721E6A0AA600B24F9D /* DatabaseWrapper+Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseWrapper+Object.swift"; sourceTree = "<group>"; };
-		3EC000741E6A149C00B24F9D /* DatabaseWrapper+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseWrapper+Logging.swift"; sourceTree = "<group>"; };
 		3EEBC40B1E69F12C00AEAFA8 /* Database-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Database-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEBC4221E69F12D00AEAFA8 /* DatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEBC4261E69F12D00AEAFA8 /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
@@ -84,20 +78,9 @@
 			path = "Database-Example";
 			sourceTree = "<group>";
 		};
-		3EC0006F1E69F2A500B24F9D /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				3EC000701E69FAB500B24F9D /* DatabaseWrapper.swift */,
-				3EC000721E6A0AA600B24F9D /* DatabaseWrapper+Object.swift */,
-				3EC000741E6A149C00B24F9D /* DatabaseWrapper+Logging.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		3EEBC4021E69F12C00AEAFA8 = {
 			isa = PBXGroup;
 			children = (
-				3EC0006F1E69F2A500B24F9D /* Source */,
 				3EC0005D1E69F29D00B24F9D /* Database-Example */,
 				3EEBC4251E69F12D00AEAFA8 /* DatabaseTests */,
 				3EEBC40C1E69F12C00AEAFA8 /* Products */,
@@ -300,9 +283,6 @@
 			files = (
 				3EC0006E1E69F29D00B24F9D /* ViewController.swift in Sources */,
 				3EC0006C1E69F29D00B24F9D /* Database.xcdatamodeld in Sources */,
-				3EC000711E69FAB500B24F9D /* DatabaseWrapper.swift in Sources */,
-				3EC000731E6A0AA600B24F9D /* DatabaseWrapper+Object.swift in Sources */,
-				3EC000751E6A149C00B24F9D /* DatabaseWrapper+Logging.swift in Sources */,
 				3EC000681E69F29D00B24F9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

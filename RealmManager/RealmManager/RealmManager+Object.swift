@@ -13,7 +13,7 @@ import RealmSwift
 
 extension Object			: DatabaseEntity {}
 
-@objc protocol DatabaseEntity {
+@objc public protocol DatabaseEntity {
 
 	/// This function should always be called in a DatabaseWrapper write-Block
 	/// This function is called directly before `self` is getting deleted
@@ -22,28 +22,28 @@ extension Object			: DatabaseEntity {}
 
 // MARK: - CRUD - Create, Read, Update, Delete
 
-extension Object {
+public extension Object {
 
-	func save(update: Bool = true) {
+	public func save(update: Bool = true) {
 		Log.debug("Add Object: \(self)")
 		RealmManager.realm?.add(self, update: update)
 	}
 
-	func delete() {
+	public func delete() {
 		Log.debug("Delete Object: \(self)")
 		(self as DatabaseEntity).deleteChildEntity?()
 		RealmManager.realm?.delete(self)
 	}
 }
 
-extension Sequence where Iterator.Element: Object {
+public extension Sequence where Iterator.Element: Object {
 
-	func save(update: Bool = true) {
+	public func save(update: Bool = true) {
 		Log.debug("Add Objects: \(self)")
 		RealmManager.realm?.add(self)
 	}
 
-	func delete() {
+	public func delete() {
 		Log.debug("Delete Objects: \(self)")
 
 		self.forEach { (entity: Object) in

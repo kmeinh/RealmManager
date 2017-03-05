@@ -5,8 +5,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 def corePods
-	pod 'RealmSwift'
-	pod 'RealmManager’, :path => ‘~/Documents/git/RealmManager'
+	pod 'RealmManager’, :path => '~/Documents/git/RealmManager'
 end
 
 target 'Database-Example' do

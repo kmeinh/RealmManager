@@ -11,7 +11,7 @@ import RealmSwift
 
 // MARK: - DatabaseWrapper
 
-struct RealmManager {
+public struct RealmManager {
 
 	// MARK: - Write Queue
 
@@ -31,7 +31,7 @@ struct RealmManager {
 
 // MARK: - Setup
 
-extension RealmManager {
+public extension RealmManager {
 
 	static func setup(configuration: Realm.Configuration? = nil) {
 		let config = Realm.Configuration(schemaVersion: 0, migrationBlock: { (migration: Migration, oldSchemaVersion: UInt64) in
@@ -66,7 +66,7 @@ extension RealmManager {
 
 	// MARK: - Save
 
-	static func save(_ saveBlock: (() -> Void), completion completionBlock: (() -> Void)?) {
+	public static func save(_ saveBlock: (() -> Void), completion completionBlock: (() -> Void)?) {
 		self.write { (realm: Realm) in
 			saveBlock()
 
