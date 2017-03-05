@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RealmSwift
+import RealmManager
 
 class Entity 			: Object {
 
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 			entities.append(entity)
 		}
 
-		DatabaseWrapper.save({
+		RealmManager.save({
 			entities.save()
 		}, completion: {
 			print("done")

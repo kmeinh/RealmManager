@@ -1,5 +1,5 @@
 //
-//  DatabaseWrapper.swift
+//  RealmManager.swift
 //  Database
 //
 //  Created by Konstantin Deichmann on 03/03/2017.
@@ -7,15 +7,14 @@
 //
 
 import Foundation
-import RealmSwift
 
 // MARK: - DatabaseWrapper
 
-struct DatabaseWrapper {
+struct RealmManager {
 
 	// MARK: - Write Queue
 
-	fileprivate static let writeDispatchQueue		= DispatchQueue(label: "databasewrapper.write.queue")
+	fileprivate static let writeDispatchQueue		= DispatchQueue(label: "RealmManager.write.queue")
 
 	// MARK: - Realm
 
@@ -31,7 +30,7 @@ struct DatabaseWrapper {
 
 // MARK: - Setup
 
-extension DatabaseWrapper {
+extension RealmManager {
 
 	static func setup(configuration: Realm.Configuration? = nil) {
 		let config = Realm.Configuration(schemaVersion: 0, migrationBlock: { (migration: Migration, oldSchemaVersion: UInt64) in
@@ -44,7 +43,7 @@ extension DatabaseWrapper {
 
 // MARK: - Write
 
-extension DatabaseWrapper {
+extension RealmManager {
 
 	// MARK: - Dispatch Sync Write Block
 

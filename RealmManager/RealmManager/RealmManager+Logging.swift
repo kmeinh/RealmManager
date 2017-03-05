@@ -1,5 +1,5 @@
 //
-//  DatabaseWrapper+Logging.swift
+//  RealmManager+Logging.swift
 //  Database
 //
 //  Created by Konstantin Deichmann on 03/03/2017.
@@ -31,7 +31,7 @@ struct Log {
 			return
 		}
 
-		print("DatabaseWrapper: \(msg)")
+		print("RealmManager: \(msg)")
 	}
 
 	static func debug(_ msg: Any) {

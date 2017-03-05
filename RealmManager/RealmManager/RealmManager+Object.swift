@@ -1,5 +1,5 @@
 //
-//  DatabaseWrapper+Object.swift
+//  RealmManager+Object.swift
 //  Database
 //
 //  Created by Konstantin Deichmann on 03/03/2017.
@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RealmSwift
 
 // MARK: - DatabaseEntity
 
@@ -26,13 +25,13 @@ extension Object {
 
 	func save(update: Bool = true) {
 		Log.debug("Add Object: \(self)")
-		DatabaseWrapper.realm?.add(self, update: update)
+		RealmManager.realm?.add(self, update: update)
 	}
 
 	func delete() {
 		Log.debug("Delete Object: \(self)")
 		(self as DatabaseEntity).deleteChildEntity?()
-		DatabaseWrapper.realm?.delete(self)
+		RealmManager.realm?.delete(self)
 	}
 }
 
@@ -40,7 +39,7 @@ extension Sequence where Iterator.Element: Object {
 
 	func save(update: Bool = true) {
 		Log.debug("Add Objects: \(self)")
-		DatabaseWrapper.realm?.add(self)
+		RealmManager.realm?.add(self)
 	}
 
 	func delete() {
