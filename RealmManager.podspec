@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target   = '9.0'
   s.source                  = { :git => "https://github.com/konDeichmann/RealmManager.git", :tag => "#{s.version}" }
   s.source_files            = "RealmManager/**/*.{swift}"
-  s.public_header_files     = "RealmManager/RealmManagerHeader.h"
   s.framework               = "Foundation"
   s.library                 = 'RealmSwift', '~> 2.4.1'
   s.requires_arc            = true
