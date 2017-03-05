@@ -5,7 +5,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 def corePods
-	pod 'RealmSwift'
+	pod 'RealmSwift', '~> 2.4.1'
 end
 
 target 'RealmManager' do
